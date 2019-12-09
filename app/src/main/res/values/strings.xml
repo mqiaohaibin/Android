@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android</string>
+
+    <!--  activities -->
+    <string name="activities_title">Activities</string>
+
+    <!-- activities_lifecycle -->
+    <string name="al_title">The Activity Lifecycle</string>
+    <string name="al_dialog">Dialog</string>
 </resources>

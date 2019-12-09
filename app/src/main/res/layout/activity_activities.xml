@@ -7,9 +7,9 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnActivities"
+        android:id="@+id/btnLifecyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activities_title" />
+        android:text="@string/al_title" />
 
 </LinearLayout>

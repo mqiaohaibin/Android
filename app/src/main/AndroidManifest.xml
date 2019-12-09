@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activities.ActivitiesActivity"
+            android:label="@string/activities_title" />
+
+        <activity
+            android:name=".activities.LifecycleActivity"
+            android:label="@string/al_title" />
+
+        <activity
+            android:name="cn.paper.library.PPDialogActivity"
+            android:theme="@style/AppTheme.Dialog" />
     </application>
 
 </manifest>
