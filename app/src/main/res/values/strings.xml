@@ -7,4 +7,10 @@
     <!-- activities_lifecycle -->
     <string name="al_title">The Activity Lifecycle</string>
     <string name="al_dialog">Dialog</string>
+
+    <!-- user interface -->
+    <string name="ui_title">User Interface</string>
+    <string name="uivp_title">View Pager</string>
+    <string name="uivp2_title">View Pager2</string>
+    <string name="ui_banner_title">Banner</string>
 </resources>

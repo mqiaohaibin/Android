@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/horizontal_activity"
@@ -7,16 +8,24 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnActivities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activities_title" />
-
-    <Button
-        android:id="@+id/btnUI"
+        android:id="@+id/btnViewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_normal"
-        android:text="@string/ui_title" />
+        android:text="@string/uivp_title" />
+
+    <Button
+        android:id="@+id/btnViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/uivp2_title"/>
+
+    <Button
+        android:id="@+id/btnBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/ui_banner_title" />
 
 </LinearLayout>

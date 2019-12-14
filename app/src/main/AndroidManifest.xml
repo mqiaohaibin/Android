@@ -16,18 +16,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.ActivitiesActivity"
             android:label="@string/activities_title" />
-
         <activity
             android:name=".activities.LifecycleActivity"
             android:label="@string/al_title" />
-
         <activity
             android:name="cn.paper.library.PPDialogActivity"
             android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".ui.UIActivity"
+            android:label="@string/ui_title" />
+        <activity
+            android:name=".ui.ViewPagerActivity"
+            android:label="@string/uivp_title" />
+        <activity
+            android:name=".ui.ViewPager2Activity"
+            android:label="@string/uivp2_title" />
+        <activity
+            android:name=".ui.BannerActivity"
+            android:label="@string/ui_banner_title" />
     </application>
 
 </manifest>
