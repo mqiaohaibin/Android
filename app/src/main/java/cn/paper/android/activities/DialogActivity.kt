@@ -1,4 +1,4 @@
-package cn.paper.library
+package cn.paper.android.activities
 
 import android.app.Activity
 import android.content.DialogInterface
@@ -6,8 +6,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.appcompat.app.AlertDialog
+import cn.paper.library.PPActivity
 
-class PPDialogActivity : PPActivity(), DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
+class DialogActivity : PPActivity(), DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
 
     private val dialogList: MutableList<DialogParams> = ArrayList()
     private var currentDialogParams: DialogParams? = null
@@ -91,5 +92,4 @@ class PPDialogActivity : PPActivity(), DialogInterface.OnClickListener, DialogIn
             var neutralButtonText: CharSequence? = null
         }
     }
-
 }

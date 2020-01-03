@@ -9,17 +9,32 @@ import cn.paper.library.PPActivity
 
 class ActivitiesActivity : PPActivity(), View.OnClickListener {
 
-    private lateinit var btnLifecycle: Button
+    private lateinit var btnActivityLifecycle: Button
+    private lateinit var btnFragmentLifecycle: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_activities)
-        btnLifecycle = findViewById(R.id.btnLifecyle)
-        btnLifecycle.setOnClickListener(this)
+
+        btnActivityLifecycle = findViewById(R.id.btnActivityLifecyle)
+        btnActivityLifecycle.setOnClickListener(this)
+
+        btnFragmentLifecycle = findViewById(R.id.btnFragmentLifecycle)
+        btnFragmentLifecycle.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-        var intent = Intent(this, LifecycleActivity::class.java)
-        startActivity(intent)
+        v?.let {
+            val intent = Intent()
+            if (it.id == R.id.btnActivityLifecyle) {
+                intent.setClass(this, LifecycleActivity::class.java)
+            } else if (it.id == R.id.btnFragmentLifecycle) {
+                intent.setClass(this, FragmentActivity::class.java)
+            }
+
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            }
+        }
     }
 }

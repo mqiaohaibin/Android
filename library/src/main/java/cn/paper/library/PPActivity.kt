@@ -41,6 +41,12 @@ open class PPActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
+            supportFragmentManager?.let {
+                if (it.backStackEntryCount > 0) {
+                    it.popBackStack()
+                    return true
+                }
+            }
             finish()
             return true
         }

@@ -16,18 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.ActivitiesActivity"
             android:label="@string/activities_title" />
-
         <activity
             android:name=".activities.LifecycleActivity"
-            android:label="@string/al_title" />
-
+            android:label="@string/al_activity_lifecycle" />
         <activity
-            android:name="cn.paper.library.PPDialogActivity"
+            android:name=".activities.DialogActivity"
             android:theme="@style/AppTheme.Dialog" />
+        <activity android:name=".activities.FragmentActivity"
+            android:label="@string/al_fragment"/>
+
     </application>
 
 </manifest>

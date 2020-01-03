@@ -9,7 +9,6 @@ import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import cn.paper.android.R
 import cn.paper.library.PPActivity
-import cn.paper.library.PPDialogActivity
 
 class LifecycleActivity : PPActivity(), View.OnClickListener {
 
@@ -45,12 +44,17 @@ class LifecycleActivity : PPActivity(), View.OnClickListener {
         dialg.show()
     }
 
+    override fun onNewIntent(intent: Intent?) {
+        Log.d(javaClass.simpleName, "onNewIntent")
+        super.onNewIntent(intent)
+    }
+
     private fun showDialogViaActivity() {
-        val intent = Intent(this, PPDialogActivity::class.java)
-        intent.putExtra(PPDialogActivity.EXTRA_DIALOG_TITLE, "title")
-        intent.putExtra(PPDialogActivity.EXTRA_DIALOG_MESSAGE, "message")
-        intent.putExtra(PPDialogActivity.EXTRA_DIALOG_POSITIVE, "ok")
-        intent.putExtra(PPDialogActivity.EXTRA_DIALOG_NEGATIVE, "cancel")
+        val intent = Intent(this, DialogActivity::class.java)
+        intent.putExtra(DialogActivity.EXTRA_DIALOG_TITLE, "title")
+        intent.putExtra(DialogActivity.EXTRA_DIALOG_MESSAGE, "message")
+        intent.putExtra(DialogActivity.EXTRA_DIALOG_POSITIVE, "ok")
+        intent.putExtra(DialogActivity.EXTRA_DIALOG_NEGATIVE, "cancel")
         startActivityForResult(intent, requestDialogCode)
     }
 
@@ -58,8 +62,8 @@ class LifecycleActivity : PPActivity(), View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == requestDialogCode) {
-            if (data != null && data.hasExtra(PPDialogActivity.RESULT_DIALOG_WHICH)) {
-                val which = data.getIntExtra(PPDialogActivity.RESULT_DIALOG_WHICH, PPDialogActivity.RESULT_DIALOG_WHICH_NEGATIVE)
+            if (data != null && data.hasExtra(DialogActivity.RESULT_DIALOG_WHICH)) {
+                val which = data.getIntExtra(DialogActivity.RESULT_DIALOG_WHICH, DialogActivity.RESULT_DIALOG_WHICH_NEGATIVE)
                 Log.d(javaClass.simpleName, "resultCode = $resultCode, which = $which")
             }
         }

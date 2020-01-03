@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">Android</string>
 
+    <!-- action -->
+    <string name="action_next">Next</string>
+
     <!--  activities -->
     <string name="activities_title">Activities</string>
 
     <!-- activities_lifecycle -->
-    <string name="al_title">The Activity Lifecycle</string>
+    <string name="al_activity">activity</string>
+    <string name="al_activity_lifecycle">The Activity Lifecycle</string>
     <string name="al_dialog">Dialog</string>
+    <string name="al_fragment">fragment</string>
+    <string name="al_fragment_lifecycle">The Fragmnet Lifecycle</string>
+
 </resources>

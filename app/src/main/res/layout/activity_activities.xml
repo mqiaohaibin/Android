@@ -6,10 +6,29 @@
     android:paddingVertical="@dimen/vertical_activity"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/al_activity" />
+
     <Button
-        android:id="@+id/btnLifecyle"
+        android:id="@+id/btnActivityLifecyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/al_title" />
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/al_activity_lifecycle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/al_fragment" />
+
+    <Button
+        android:id="@+id/btnFragmentLifecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/al_fragment_lifecycle" />
 
 </LinearLayout>
