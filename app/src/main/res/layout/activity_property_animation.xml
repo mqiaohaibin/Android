@@ -6,17 +6,27 @@
     android:paddingVertical="@dimen/vertical_activity"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnActivities"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activities_title" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:text="al_animation_property" />
 
     <Button
-        android:id="@+id/btnAnimations"
+        android:id="@+id/btnChangeColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_normal"
-        android:text="@string/al_animations" />
+        android:text="@string/ap_changeColor" />
+
+    <Button
+        android:id="@+id/btnChangeState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:stateListAnimator="@animator/animate_scale"
+        android:text="@string/ap_changeState" />
 
 </LinearLayout>
