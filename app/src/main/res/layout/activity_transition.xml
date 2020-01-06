@@ -6,17 +6,15 @@
     android:paddingVertical="@dimen/vertical_activity"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnActivities"
-        android:layout_width="match_parent"
+    <ImageView
+        android:transitionName="imageview"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activities_title" />
+        android:src="@mipmap/ic_launcher_round"/>
 
-    <Button
-        android:id="@+id/btnAnimations"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:text="@string/al_animations" />
+        android:text="@string/ap_transition" />
 
 </LinearLayout>

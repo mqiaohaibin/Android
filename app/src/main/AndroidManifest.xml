@@ -25,9 +25,21 @@
         <activity
             android:name=".activities.DialogActivity"
             android:theme="@style/AppTheme.Dialog" />
-        <activity android:name=".activities.FragmentActivity"
-            android:label="@string/al_fragment"/>
-
+        <activity
+            android:name=".activities.FragmentActivity"
+            android:label="@string/al_fragment" />
+        <activity
+            android:name=".animations.AnimationsActivity"
+            android:label="@string/al_animations" />
+        <activity
+            android:name=".animations.AutoLayoutActivity"
+            android:label="@string/al_animation_layout" />
+        <activity
+            android:name=".animations.PropertyAnimationActivity"
+            android:label="@string/al_animation_property" />
+        <activity
+            android:name=".animations.TransitionActivity"
+            android:label="@string/ap_transition" />
     </application>
 
 </manifest>

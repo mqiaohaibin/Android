@@ -3,6 +3,8 @@
 
     <!-- action -->
     <string name="action_next">Next</string>
+    <string name="action_animate">Animate</string>
+    <string name="action_add">Add</string>
 
     <!--  activities -->
     <string name="activities_title">Activities</string>
@@ -13,5 +15,19 @@
     <string name="al_dialog">Dialog</string>
     <string name="al_fragment">fragment</string>
     <string name="al_fragment_lifecycle">The Fragmnet Lifecycle</string>
+
+    <!-- activities_animation -->
+    <string name="al_animations">animations</string>
+
+    <!-- activities_animation_layout -->
+    <string name="al_animation_layout">Auto Animate Layout Updates</string>
+    <string name="al_animation_property">Property Animation</string>
+    <string name="ap_changeColor">Change Color</string>
+    <string name="ap_changeState">Change view state</string>
+    <string name="ap_transition">Transition</string>
+    <string name="ap_activity_transition">Activity Transition</string>
+    <string name="ap_activity_transition21">Activity Transition API 21</string>
+    <string name="ap_activity_transitionSharedElements">Activity Transition With Shared Elements</string>
+    <string name="ap_shared_elements">Shared Elements</string>
 
 </resources>
